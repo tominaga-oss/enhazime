@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>縁初め | ご縁鑑定</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Zen+Old+Mincho:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-effects">
+        <div class="stars"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="app-container">
+
+        <!-- SECTION: Welcome Screen -->
+        <section id="welcome-screen" class="screen active">
+            <div class="content-wrapper fade-in-up">
+                <p class="subtitle">ご縁鑑定</p>
+                <h1 class="main-title">縁初め</h1>
+                <div class="intro-box">
+                    <p class="description">
+                        あなたの深層意識にある<br>
+                        「ご縁の源泉」を解き明かす
+                    </p>
+                    <ul class="specs">
+                        <li><span>診断名</span>縁初め（えんぞめ）</li>
+                        <li><span>質問数</span>全9問</li>
+                        <li><span>所要時間</span>約3分</li>
+                    </ul>
+                </div>
+                <button id="start-btn" class="btn-primary">
+                    <span class="btn-text">鑑定を始める</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECTION: Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <div class="progress-container">
+                    <div class="progress-bar-bg">
+                        <div id="progress-bar" class="progress-bar-fill"></div>
+                    </div>
+                    <p class="progress-text">Q<span id="current-q-num">1</span> / 12</p>
+                </div>
+            </div>
+
+            <div class="quiz-content fade-in">
+                <h2 id="question-text" class="question-text">
+                    [質問内容が入ります]
+                </h2>
+                <div id="options-container" class="options-grid">
+                    <!-- Options injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: Result Screen -->
+        <section id="result-screen" class="screen hidden">
+            <div class="result-content fade-in-up">
+                <p class="result-header">あなたの波動タイプは…</p>
+
+                <div class="archetype-card">
+                    <h2 id="result-type-name" class="archetype-name">[タイプ名]</h2>
+                    <p id="result-subtitle" class="archetype-subtitle">[キャッチフレーズ]</p>
+
+                    <div class="divider-gold"></div>
+
+                    <div class="result-stats">
+                        <div class="stat-row">
+                            <span class="stat-label">ご縁波動レベル</span>
+                            <span class="stat-value">3</span>
+                        </div>
+                        <p class="stat-description">みたまい伝えてくれ</p>
+                    </div>
+
+                    <div class="radar-grid">
+                        <div class="radar-item">
+                            <span class="label">ご縁の源泉</span>
+                            <span class="value">3</span>
+                        </div>
+                        <div class="radar-item">
+                            <span class="label">ご縁の流れ</span>
+                            <span class="value">3</span>
+                        </div>
+                        <div class="radar-item">
+                            <span class="label">ご縁ブロック</span>
+                            <span class="value">3</span>
+                        </div>
+                    </div>
+
+                    <div class="guidance-box">
+                        <h3>行動指針</h3>
+                        <p class="guidance-text">3つの行動指針</p>
+                        <p class="guidance-desc">みたまい伝えてくれ</p>
+                    </div>
+                </div>
+
+
+                <footer class="result-footer">
+                    <p>※ この診断は娯楽目的であり、実在する人物・団体とは関係ありません。</p>
+                </footer>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
