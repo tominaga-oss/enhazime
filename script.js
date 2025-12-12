@@ -393,4 +393,3 @@ function switchScreen(from, to) {
         to.classList.add('active');
     }, 500);
 }
-
